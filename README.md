@@ -10,3 +10,4 @@
 * project-tags-translation
   * json-generator
     * generate json files in `/lang` for all supported languages in minecraft from a base `en_us.json` file located next to the script
+  

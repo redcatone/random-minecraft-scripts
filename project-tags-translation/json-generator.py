@@ -24,6 +24,7 @@ def json_generator(language_list):
         finally:
             with open(abs_file_path, "w") as fw:
                 fw.write(json.dumps(final_data_dict, indent=4, separators=(", ", " : "), sort_keys=True))
+                fw.write("\n")
 
 if __name__ == "__main__":
     # locale codes from minecraft wiki
