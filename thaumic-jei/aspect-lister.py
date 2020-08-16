@@ -94,7 +94,7 @@ def json_data(filename):
                 cf.write(f"|{i}")
             cf.write("\n")
 
-    with open(f"{script_dir}/md.output.md", "w") as mf:
+    with open(f"{script_dir}/md_output.md", "w") as mf:
         headers = ["Item Name"]
         for i in range(0, 10):
             headers.append(f"Aspect {i}")
@@ -111,7 +111,6 @@ def json_data(filename):
             for i in item_aspect_dict[key]:
                 mf.write(f"|{i}")
             mf.write("\n")
-
 
 
     # csv_file = f"{script_dir}/csv_output.csv"
@@ -140,4 +139,3 @@ def json_data(filename):
 if __name__ == "__main__":
     json_data("thaumicjei_itemstack_aspects.json")
     # json_data("test.json")
-
