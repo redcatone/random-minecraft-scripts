@@ -1,30 +1,53 @@
-import os, json
+import os, json, csv
+import translators as ts
 
 def json_generator(language_list):
     script_dir = os.path.dirname(__file__) # get path to script
     with open(f"{script_dir}/en_us.json", "r") as main_data_file: # convert main json to python dictionary
-        main_data_dict = json.loads(main_data_file.read())
+        main_data_dict = json.loads(main_data_file.read()) # main_data_file == en_us.json
 
     for language in language_list:
-        final_data_dict = main_data_dict.copy()
+        final_data_dict = main_data_dict.copy() # main_data_file used as base for other languages
 
         rel_path = f"lang/{language}.json"
         abs_file_path = os.path.join(script_dir, rel_path)
 
         try:
-            with open(abs_file_path, "r") as f:
+            with open(abs_file_path, "r") as f: # read old file
                 _old_data_dict = json.loads(f.read())
+
                 for key in final_data_dict:
-                    if key not in _old_data_dict:
-                        continue
-                    elif final_data_dict[key] != _old_data_dict[key]:
+                    if key not in _old_data_dict: # translate if not already translated
+                        translated_value = translate(final_data_dict[key], language)
+                        if translated_value == "No translation available":
+                            continue
+                        else:
+                            final_data_dict[key] = translated_value
+                    elif final_data_dict[key] != _old_data_dict[key]: # copy old translation if it exists
                         final_data_dict[key] = _old_data_dict[key]
-        except FileNotFoundError:
-            pass
+        except FileNotFoundError: # if file doesn't exist, translate all
+            for key in final_data_dict:
+                translated_value = translate(final_data_dict[key], language)
+                if translated_value == "No translation available":
+                    continue
+                else:
+                    final_data_dict[key] = translated_value
         finally:
             with open(abs_file_path, "w") as fw:
-                fw.write(json.dumps(final_data_dict, indent=4, separators=(", ", " : "), sort_keys=True))
+                fw.write(json.dumps(final_data_dict, indent=4, separators=(",", ": "), sort_keys=True))
                 fw.write("\n")
+
+with open("locale_code_mc_google.csv", mode='r') as locale_codes: # create dict to convert from mc locale to google translate locale
+    reader = csv.reader(locale_codes)
+    mc_to_google_locale_dict = {rows[0]:rows[1] for rows in reader}
+
+def translate(text, mc_locale):
+    locale_code = mc_to_google_locale_dict[mc_locale]
+    if locale_code == "":
+        return "No translation available"
+    else:
+        translated_text = ts.google(text, from_language="en", to_language=locale_code)
+        return translated_text
 
 if __name__ == "__main__":
     # locale codes from minecraft wiki
