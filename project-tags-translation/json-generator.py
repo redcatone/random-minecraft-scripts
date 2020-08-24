@@ -1,5 +1,9 @@
-import os, json, csv
+import os, json, csv, re
 import translators as ts
+
+with open("locale_code_mc_google.csv", mode='r') as locale_codes: # create dict to convert from mc locale to google translate locale
+    reader = csv.reader(locale_codes)
+    mc_to_google_locale_dict = {rows[0]:rows[1] for rows in reader}
 
 def json_generator(language_list):
     script_dir = os.path.dirname(__file__) # get path to script
@@ -37,16 +41,22 @@ def json_generator(language_list):
                 fw.write(json.dumps(final_data_dict, indent=4, separators=(",", ": "), sort_keys=True))
                 fw.write("\n")
 
-with open("locale_code_mc_google.csv", mode='r') as locale_codes: # create dict to convert from mc locale to google translate locale
-    reader = csv.reader(locale_codes)
-    mc_to_google_locale_dict = {rows[0]:rows[1] for rows in reader}
+def camel_case_split(text_to_split):
+    return re.sub(r"([A-Z])", r" \1", text_to_split).strip() # Insert space before capitalized letters and remove leading whitespace
+
+def camel_case_join(text_to_join):
+    return text_to_join.replace(" ", "") # Remove spaces
 
 def translate(text, mc_locale):
     locale_code = mc_to_google_locale_dict[mc_locale]
     if locale_code == "":
+        print("No translation available")
         return "No translation available"
     else:
-        translated_text = ts.google(text, from_language="en", to_language=locale_code)
+        split_text = camel_case_split(text)
+        translated_text = ts.google(split_text, from_language="en", to_language=locale_code)
+        translated_text = camel_case_join(translated_text)
+        print(f"{split_text} translated to {translated_text}")
         return translated_text
 
 if __name__ == "__main__":
