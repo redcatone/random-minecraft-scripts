@@ -1,0 +1,107 @@
+blacksmith:3	brass_case_unlock	create:brass_casing:4							create:brass_sheet:8	minecraft:oak_log:4
+blacksmith:1	copper_case_unlock	create:copper_casing:4							create:copper_sheet:8	minecraft:oak_log:4
+blacksmith:4	entity_spawner_unlock	mob_grinding_utils:entity_spawner:1							mob_grinding_utils:solid_xp_block:2	apotheosis:farmers_leash:1	minecraft:piston:1
+blacksmith:3	iron_farm_unlock	easy_villagers:iron_farm:1							minecraft:iron_block:1	minecraft:lava_bucket:1	minecraft:glass:1
+blacksmith:2	mob_grinder_unlock	mob_grinding_utils:saw:1							minecraft:redstone_block:1	minecraft:diamond_sword:2	mob_grinding_utils:spikes:2
+blacksmith:2	ore_crushing_hammer_unlock	engineerstools:crushing_hammer:1							minecraft:iron_block:1	excompressum:compressed_hammer_stone:1
+blacksmith:1	seared_melter_unlock	tconstruct:melter:1							tconstruct:seared_tank:1	tconstruct:seared_brick:5
+blacksmith:3	steel_casing_unlock	mekanism:steel_casing:1							mekanism:ingot_osmium:1	immersiveengineering:plate_steel:8
+crusher:2	blast_brick_unlock	immersiveengineering:blastbrick:27							minecraft:magma_block:9	minecraft:nether_bricks:27
+crusher:2	coke_brick_unlock	immersiveengineering:cokebrick:27							minecraft:sandstone:9	minecraft:clay:27
+crusher:1	None	immersivepetroleum:asphalt:16							minecraft:sand:8	minecraft:gravel:4	immersivepetroleum:bitumen:2
+crusher:1	None	immersiveengineering:concrete:16							minecraft:sand:8	minecraft:gravel:4	minecraft:clay:1
+crusher:1	None	excompressum:compressed_dust:1							excompressum:compressed_sand:2
+crusher:1	gildedhammer	excompressum:compressed_dust:1							excompressum:compressed_sand:1
+crusher:1	None	excompressum:compressed_gravel:1							excompressum:compressed_cobblestone:2
+crusher:1	gildedhammer	excompressum:compressed_gravel:1							excompressum:compressed_cobblestone:1
+crusher:1	None	excompressum:compressed_nether_gravel:1							excompressum:compressed_netherrack:2
+crusher:1	gildedhammer	excompressum:compressed_nether_gravel:1							excompressum:compressed_netherrack:1
+crusher:1	None	excompressum:compressed_sand:1							excompressum:compressed_gravel:2
+crusher:1	gildedhammer	excompressum:compressed_sand:1							excompressum:compressed_gravel:1
+crusher:1	None	exnihilosequentia:dust:1							minecraft:sand:2
+crusher:1	gildedhammer	exnihilosequentia:dust:1							minecraft:sand:1
+crusher:2	vintium_unlock	mana-and-artifice:vinteum_dust:8							mana-and-artifice:vinteum_ore:8
+enchanter:2	novice_spellbook_unlock	ars_nouveau:novice_spell_book:1							minecraft:book:1	ars_nouveau:magic_clay:1
+enchanter:4	ars_turret_unlock	ars_nouveau:spell_turret:1							ars_nouveau:arcane_relay_splitter:1	ars_nouveau:wand:1
+enchanter:3	cooking_for_blockheads_unlock	cookingforblockheads:crafting_book:1							tconstruct:crafting_station:1	minecraft:diamond:2	cookingforblockheads:recipe_book:1
+enchanter:3	ender_chest_unlock	enderstorage:ender_chest:1							minecraft:ender_chest:1	minecraft:blaze_rod:4
+enchanter:4	ender_pouch_unlock	enderstorage:ender_pouch:1							enderstorage:ender_chest:1	mana-and-artifice:stone_rune_bag:4
+enchanter:3	ender_chest_unlock	enderstorage:ender_tank:1							mob_grinding_utils:tank_sink:1	minecraft:blaze_rod:4
+enchanter:3	gm_chicken_feed_unlock	mob_grinding_utils:gm_chicken_feed_cursed:1							minecraft:wither_skeleton_skull:1	minecraft:wheat_seeds:4	mob_grinding_utils:solid_xp_block:1
+enchanter:1	linking_tool_unlock	pedestals:linkingtool:1							pamhc2foodcore:fishsticksitem:1	minecraft:diamond:2
+enchanter:4	mana_weaving_altar_unlock	mana-and-artifice:manaweaving_altar:1							mana-and-artifice:vinteum_coated_iron:5	mana-and-artifice:vinteum_dust:4
+enchanter:2	ped_bee_hive_unlock	pedestals:coin/harvesterhives:1							pedestals:coin/default:1	minecraft:honeycomb_block:1
+enchanter:2	ped_chopper_unlock	pedestals:coin/chopper:1							pedestals:coin/default:1	minecraft:diamond:1
+enchanter:2	ped_crush_unlock	pedestals:coin/crusher:1							pedestals:coin/default:1	minecolonies:blockhutcrusher:1
+enchanter:2	ped_crush_unlock	pedestals:coin/rfcrusher:1							pedestals:coin/default:1	minecolonies:blockhutcrusher:1	pedestals:coin/rfimport:1
+enchanter:2	ped_harvester_unlock	pedestals:coin/harvester:1							pedestals:coin/default:1	exnihilosequentia:crook_diamond:1
+enchanter:2	ped_planter_unlock	pedestals:coin/planter:1							pedestals:coin/default:1	supplementaries:planter:1
+enchanter:2	ped_saw_unlock	pedestals:coin/sawmill:1							pedestals:coin/default:1	minecolonies:blockhutsawmill:1
+enchanter:2	ped_saw_unlock	pedestals:coin/rfsawmill:1							pedestals:coin/default:1	minecolonies:blockhutsawmill:1	pedestals:coin/rfimport:1
+enchanter:2	ped_shear_unlock	pedestals:coin/shearer:1							pedestals:coin/default:1	minecolonies:blockhutshepherd:1
+enchanter:2	vil_farmer_unlock	easy_villagers:farmer:1							minecolonies:blockhutfarmer:1	easy_villagers:trader:1
+glassblower:1	jetpack_unlock	ironjetpacks:wood_jetpack:1							minecraft:tnt:1	ironjetpacks:strap:1	ironjetpacks:wood_capacitor:1	ironjetpacks:wood_thruster:2
+graveyard:3	blood_altar_unlock	bloodmagic:altar:1							minecraft:gold_ingot:3	minecraft:stone:4	tconstruct:blood_bucket:1
+lumberjack:1	blockhead_market_unlock	farmingforblockheads:market:1							minecraft:red_wool:1	minecraft:oak_log:2	minecraft:oak_pressure_plate:2
+mechanic:3	advanced_cc_unlock	mekanism:advanced_control_circuit:1							mekanism:alloy_infused:2	mekanism:basic_control_circuit:1
+mechanic:2	air_compressor_unlock	pneumaticcraft:air_compressor:1							pneumaticcraft:reinforced_bricks:6	pneumaticcraft:pressure_tube:1
+mechanic:2	andesite_case_unlock	create:andesite_casing:1							minecraft:oak_log:1	create:andesite_alloy:2
+mechanic:5	arial_interface_unlock	pneumaticcraft:aerial_interface:1							pneumaticcraft:advanced_pressure_tube:2	pneumaticcraft:pressure_chamber_wall:4	minecraft:ender_pearl:2	minecraft:nether_star:1
+mechanic:3	assembly_controller_unlock	pneumaticcraft:assembly_controller:1							pneumaticcraft:unassembled_pcb:3	pneumaticcraft:ingot_iron_compressed:3
+mechanic:5	botany_pot_unlock	botanypots:hopper_botany_pot:1							minecraft:terracotta:5	minecraft:hopper:1	minecraft:flower_pot:1
+mechanic:3	charging_station_unlock	pneumaticcraft:charging_station:1							pneumaticcraft:pressure_tube:1	pneumaticcraft:reinforced_stone_slab:3	minecraft:brick:3
+mechanic:3	cloche_unlock	immersiveengineering:cloche:1							minecraft:glass:4	immersiveengineering:treated_wood_horizontal:2	immersiveengineering:component_iron:1	immersiveengineering:electron_tube:1
+mechanic:2	computer_unlock	computercraft:computer_normal:1							minecraft:glass_pane:1	minecraft:redstone_block:1	minecraft:stone:7
+mechanic:3	create_harvester_unlock	create:mechanical_harvester:1							create:andesite_alloy:2	create:andesite_casing:1	minecraft:iron_bars:4
+mechanic:4	elite_cc_unlock	mekanism:elite_control_circuit:1							mekanism:advanced_control_circuit:1	mekanism:alloy_reinforced:2
+mechanic:3	programmer_unlock	pneumaticcraft:programmer:1							pneumaticcraft:turbine_rotor:2	pneumaticcraft:printed_circuit_board:1	pneumaticcraft:plastic:2
+mechanic:4	rs_controller_unlock	refinedstorage:controller:1							refinedstorage:machine_casing:1	refinedstorage:advanced_processor:1	refinedstorage:quartz_enriched_iron_block:1
+mechanic:5	rs_range_upgrade_unlock	refinedstorage:range_upgrade:1							refinedstorage:upgrade:1	quark:ender_watcher:1
+mechanic:4	saw_blade_unlock	immersiveengineering:sawblade:1							minecraft:diamond:1	immersiveengineering:plate_steel:1
+mechanic:5	programmer_unlock	computercraft:turtle_normal:1							minecraft:redstone_block:1	computercraft:computer_normal:1	minecraft:iron_ingot:7
+mechanic:5	ultimate_cc_unlock	mekanism:ultimate_control_circuit:1							mekanism:elite_control_circuit:1	mekanism:alloy_atomic:2
+mechanic:5	wireless_grid_unlock	refinedstorageaddons:wireless_crafting_grid:1							storage4computercraft:rs_peripheral:1	refinedstorage:crafting_grid:1	colony4cc:colony_peripheral:1
+sawmill:2	None	minecraft:acacia_planks:6	minecraft:acacia_door:1	minecraft:stripped_acacia_wood:1	minecraft:chest:1	minecraft:acacia_wood:1	minecraft:stripped_acacia_log:1		minecraft:acacia_log:1
+sawmill:1	None	minecraft:acacia_slab:1	minecraft:bowl:3	minecraft:stick:6	minecraft:acacia_button:8	minecraft:acacia_stairs:1			minecraft:acacia_planks:1
+sawmill:3	None	minecraft:acacia_trapdoor:3	minecraft:acacia_fence:2	minecraft:acacia_fence_gate:2	minecraft:acacia_pressure_plate:4	minecraft:acacia_sign:2			minecraft:acacia_planks:1
+sawmill:2	None	minecraft:birch_planks:6	minecraft:birch_door:1	minecraft:stripped_birch_wood:1	minecraft:chest:1	minecraft:birch_wood:1	minecraft:stripped_birch_log:1		minecraft:birch_log:1
+sawmill:1	None	minecraft:birch_slab:1	minecraft:bowl:3	minecraft:stick:6	minecraft:birch_button:8	minecraft:birch_stairs:1			minecraft:birch_planks:1
+sawmill:3	None	minecraft:birch_trapdoor:3	minecraft:birch_fence:2	minecraft:birch_fence_gate:2	minecraft:birch_pressure_plate:4	minecraft:birch_sign:2			minecraft:birch_planks:1
+sawmill:3	None	structurize:blockcactustrapdoor:3	structurize:blockcactusfence:2	structurize:blockcactusfencegate:2					structurize:blockcactusplank:1
+sawmill:2	None	structurize:blockcactusplank:6	structurize:blockcactusdoor:1						minecraft:cactus:1
+sawmill:1	None	structurize:blockcactusslab:1	structurize:blockcactusstair:1						structurize:blockcactusplank:1
+sawmill:2	None	minecraft:crimson_planks:6	minecraft:crimson_door:1	minecraft:stripped_crimson_hyphae:1	minecraft:chest:1	minecraft:stripped_crimson_stem:1	minecraft:stripped_crimson_stem:1		minecraft:crimson_stem:1
+sawmill:1	None	minecraft:crimson_slab:1	minecraft:bowl:3	minecraft:stick:6	minecraft:crimson_button:8	minecraft:crimson_stairs:1			minecraft:crimson_planks:1
+sawmill:3	None	minecraft:crimson_trapdoor:3	minecraft:crimson_fence:2	minecraft:crimson_fence_gate:2	minecraft:crimson_pressure_plate:4	minecraft:crimson_sign:2			minecraft:crimson_planks:1
+sawmill:2	None	minecraft:dark_oak_planks:6	minecraft:dark_oak_door:1	minecraft:stripped_dark_oak_wood:1	minecraft:chest:1	minecraft:dark_oak_wood:1	minecraft:stripped_dark_oak_log:1		minecraft:dark_oak_log:1
+sawmill:1	None	minecraft:dark_oak_slab:1	minecraft:bowl:3	minecraft:stick:6	minecraft:dark_oak_button:8	minecraft:dark_oak_stairs:1			minecraft:dark_oak_planks:1
+sawmill:3	None	minecraft:dark_oak_trapdoor:3	minecraft:dark_oak_fence:2	minecraft:dark_oak_fence_gate:2	minecraft:dark_oak_pressure_plate:4	minecraft:dark_oak_sign:2			minecraft:dark_oak_planks:1
+sawmill:2	None	minecraft:jungle_planks:6	minecraft:jungle_door:1	minecraft:stripped_jungle_wood:1	minecraft:chest:1	minecraft:jungle_wood:1	minecraft:stripped_jungle_log:1		minecraft:jungle_log:1
+sawmill:1	None	minecraft:jungle_slab:1	minecraft:bowl:3	minecraft:stick:6	minecraft:jungle_button:8	minecraft:jungle_stairs:1			minecraft:jungle_planks:1
+sawmill:3	None	minecraft:jungle_trapdoor:3	minecraft:jungle_fence:2	minecraft:jungle_fence_gate:2	minecraft:jungle_pressure_plate:4	minecraft:jungle_sign:2			minecraft:jungle_planks:1
+sawmill:2	None	minecraft:oak_planks:6	minecraft:oak_door:1	minecraft:stripped_oak_wood:1	minecraft:chest:1	minecraft:oak_wood:1	minecraft:stripped_oak_log:1		minecraft:oak_log:1
+sawmill:1	None	minecraft:oak_slab:1	minecraft:bowl:3	minecraft:stick:6	minecraft:oak_button:8	minecraft:oak_stairs:1			minecraft:oak_planks:1
+sawmill:3	None	minecraft:oak_trapdoor:3	minecraft:oak_fence:2	minecraft:oak_fence_gate:2	minecraft:oak_pressure_plate:4	minecraft:oak_sign:2			minecraft:oak_planks:1
+sawmill:2	None	minecraft:spruce_planks:6	minecraft:spruce_door:1	minecraft:stripped_spruce_wood:1	minecraft:chest:1	minecraft:spruce_wood:1	minecraft:stripped_spruce_log:1		minecraft:spruce_log:1
+sawmill:1	None	minecraft:spruce_slab:1	minecraft:bowl:3	minecraft:stick:6	minecraft:spruce_button:8	minecraft:spruce_stairs:1			minecraft:spruce_planks:1
+sawmill:3	None	minecraft:spruce_trapdoor:3	minecraft:spruce_fence:2	minecraft:spruce_fence_gate:2	minecraft:spruce_pressure_plate:4	minecraft:spruce_sign:2			minecraft:spruce_planks:1
+sawmill:2	None	minecraft:warped_planks:6	minecraft:warped_door:1	minecraft:stripped_warped_hyphae:1	minecraft:chest:1	minecraft:stripped_warped_stem:1	minecraft:stripped_warped_stem:1		minecraft:warped_stem:1
+sawmill:1	None	minecraft:warped_slab:1	minecraft:bowl:3	minecraft:stick:6	minecraft:warped_button:8	minecraft:warped_stairs:1			minecraft:warped_planks:1
+sawmill:3	None	minecraft:warped_trapdoor:3	minecraft:warped_fence:2	minecraft:warped_fence_gate:2	minecraft:warped_pressure_plate:4	minecraft:warped_sign:2			minecraft:warped_planks:1
+stonemason:2	andesite_alloy_unlock	create:andesite_alloy:16							minecraft:andesite:16	exnihilosequentia:ingot_zinc:2
+stonemason:2	arcane_stone_unlock	ars_nouveau:arcane_stone:8							minecraft:stone:8	ars_nouveau:mana_gem:1
+stonemason:3	blank_plate_unlock	darkutils:blank_plate:24							minecraft:black_dye:6	minecraft:stone:3
+stonemason:1	None	minecraft:polished_andesite:1	minecraft:andesite_slab:2	minecraft:andesite_stairs:1	minecraft:andesite_wall:1				minecraft:andesite:1
+stonemason:2	None	minecraft:polished_andesite_stairs:1	minecraft:polished_andesite_slab:2						minecraft:polished_andesite:1
+stonemason:1	None	minecraft:brick_slab:2	minecraft:brick_wall:1	minecraft:brick_stairs:1					minecraft:bricks:1
+stonemason:1	None	minecraft:cobblestone_slab:2	minecraft:cobblestone_wall:1	minecraft:cobblestone_stairs:1					minecraft:cobblestone:1
+stonemason:1	None	minecraft:polished_diorite:1	minecraft:diorite_slab:2	minecraft:diorite_stairs:1	minecraft:diorite_wall:1				minecraft:diorite:1
+stonemason:2	None	minecraft:polished_diorite_stairs:1	minecraft:polished_diorite_slab:2						minecraft:polished_diorite:1
+stonemason:1	None	minecraft:polished_granite:1	minecraft:granite_slab:2	minecraft:granite_stairs:1	minecraft:granite_wall:1				minecraft:granite:1
+stonemason:2	None	minecraft:polished_granite_stairs:1	minecraft:polished_granite_slab:2						minecraft:polished_granite:1
+stonemason:3	None	minecraft:nether_brick_stairs:1	minecraft:nether_brick_wall:1	minecraft:chiseled_nether_bricks:1	minecraft:nether_brick_stairs:1	minecraft:nether_brick_slab:2	minecraft:nether_brick_fence:2		minecraft:nether_bricks:1
+stonemason:1	None	minecraft:cut_sandstone:1	minecraft:chiseled_sandstone:2	minecraft:cut_sandstone_slab:2	minecraft:sandstone_wall:1	minecraft:sandstone_slab:2	minecraft:sandstone_stairs:1		minecraft:sandstone:1
+stonemason:1	None	minecraft:cut_red_sandstone:1	minecraft:chiseled_red_sandstone:2	minecraft:cut_red_sandstone_slab:2	minecraft:red_sandstone_wall:1	minecraft:red_sandstone_slab:2	minecraft:red_sandstone_stairs:1		minecraft:red_sandstone:1
+stonemason:2	None	minecraft:smooth_stone_slab:2							minecraft:smooth_stone:1
+stonemason:1	None	minecraft:stone_stairs:1	minecraft:stone_slab:2	minecraft:stone_button:8					minecraft:stone:1
+stonemason:2	None	minecraft:stone_brick_slab:2	minecraft:stone_brick_stairs:1	minecraft:stone_brick_wall:1					minecraft:stone_bricks:1
