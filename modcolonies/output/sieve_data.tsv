@@ -1,72 +1,11 @@
-minecraft:empty	 diamond - dirt, 20	 diamond - dust, 20	 diamond - gravel, 20	 diamond - netherrack, 60	 diamond - sand, 20	 diamond - soul_sand, 40	 iron - dirt, 20	 iron - dust, 20	 iron - gravel, 20	 iron - netherrack, 20	 iron - sand, 20	 iron - soul_sand, 20	 flint - dirt, 20	 flint - dust, 20	 flint - gravel, 20	 flint - netherrack, 20	 flint - sand, 20	 flint - soul_sand, 20	 string - dirt, 20	 string - dust, 20	 string - gravel, 20	 string - gravel, 2	 string - sand, 20	 string - soul_sand, 20
-minecraft:wheat_seeds	 diamond - dirt, 5	 iron - dirt, 5	 flint - dirt, 5	 string - dirt, 5
-minecraft:melon_seeds	 diamond - dirt, 1	 iron - dirt, 1	 flint - dirt, 1	 string - dirt, 1
-minecraft:pumpkin_seeds	 diamond - dirt, 1	 iron - dirt, 1	 flint - dirt, 1	 string - dirt, 1
-minecraft:beetroot_seeds	 diamond - dirt, 2	 iron - dirt, 2	 flint - dirt, 2	 string - dirt, 2
-exnihilosequentia:seed_birch	 diamond - dirt, 3	 iron - dirt, 3	 flint - dirt, 3	 string - dirt, 3
-exnihilosequentia:grass_seeds	 diamond - dirt, 1	 iron - dirt, 1	 flint - dirt, 1	 string - dirt, 1
-exnihilosequentia:seed_darkoak	 diamond - dirt, 3	 iron - dirt, 3	 flint - dirt, 3	 string - dirt, 3
-exnihilosequentia:seed_berry	 diamond - dirt, 3	 iron - dirt, 3	 flint - dirt, 3	 string - dirt, 3
-exnihilosequentia:seed_large_fern	 diamond - dirt, 1	 iron - dirt, 1	 flint - dirt, 1	 string - dirt, 1
-exnihilosequentia:seed_bamboo	 diamond - dirt, 1	 iron - dirt, 1	 flint - dirt, 1	 string - dirt, 1
-exnihilosequentia:seed_potato	 diamond - dirt, 2	 iron - dirt, 2	 flint - dirt, 2	 string - dirt, 2
-exnihilosequentia:seed_spruce	 diamond - dirt, 3	 iron - dirt, 3	 flint - dirt, 3	 string - dirt, 3
-exnihilosequentia:seed_jungle	 diamond - dirt, 3	 iron - dirt, 3	 flint - dirt, 3	 string - dirt, 3
-exnihilosequentia:seed_acacia	 diamond - dirt, 3	 iron - dirt, 3	 flint - dirt, 3	 string - dirt, 3
-exnihilosequentia:seed_fern	 diamond - dirt, 2	 iron - dirt, 2	 flint - dirt, 2	 string - dirt, 2
-exnihilosequentia:seed_carrot	 diamond - dirt, 2	 iron - dirt, 2	 flint - dirt, 2	 string - dirt, 2
 exnihilosequentia:seed_oak	 diamond - dirt, 3	 iron - dirt, 3	 flint - dirt, 3	 string - dirt, 3
-exnihilosequentia:chunk_tin	 diamond - dust, 3	 iron - dust, 3
-exnihilosequentia:chunk_aluminum	 diamond - dust, 2	 iron - dust, 2
-exnihilosequentia:chunk_silver	 diamond - dust, 2	 iron - dust, 2
-minecraft:glowstone_dust	 diamond - dust, 4	 iron - dust, 4
-minecraft:blaze_powder	 diamond - dust, 3	 diamond - netherrack, 20	 diamond - soul_sand, 18	 iron - dust, 3	 iron - netherrack, 2	 iron - soul_sand, 1
-exnihilosequentia:chunk_uranium	 diamond - dust, 4	 diamond - gravel, 2
-minecraft:redstone	 diamond - dust, 8	 iron - dust, 8	 flint - dust, 4
 minecraft:bone_meal	 diamond - dust, 4	 iron - dust, 4	 flint - dust, 4	 string - dust, 4
-minecraft:diamond	 diamond - gravel, 2	 iron - gravel, 1
-exnihilosequentia:chunk_gold	 diamond - gravel, 2	 diamond - netherrack, 30	 iron - gravel, 2	 iron - netherrack, 3	 flint - netherrack, 3
-exnihilosequentia:chunk_osmium	 diamond - gravel, 4	 iron - gravel, 3
-exnihilosequentia:chunk_nickel	 diamond - gravel, 2	 iron - gravel, 2
-exnihilosequentia:chunk_lead	 diamond - gravel, 4	 iron - gravel, 3
-minecraft:lapis_lazuli	 diamond - gravel, 4	 iron - gravel, 3	 flint - gravel, 1
-exnihilosequentia:chunk_zinc	 diamond - gravel, 3	 iron - gravel, 4	 flint - gravel, 2
-minecraft:coal	 diamond - gravel, 8	 iron - gravel, 8	 flint - gravel, 4	 string - gravel, 2
-exnihilosequentia:chunk_copper	 diamond - gravel, 4	 iron - gravel, 5	 flint - gravel, 2
-exnihilosequentia:chunk_iron	 diamond - gravel, 6	 diamond - sand, 5	 iron - gravel, 6	 iron - sand, 4	 flint - gravel, 3	 flint - sand, 4	 string - gravel, 1
-exnihilosequentia:chunk_cobalt	 diamond - netherrack, 6
-minecraft:netherite_scrap	 diamond - netherrack, 2	 diamond - soul_sand, 3
-create:rose_quartz	 diamond - netherrack, 10	 iron - netherrack, 1
+exnihilosequentia:chunk_iron	 diamond - gravel, 6	 iron - gravel, 6	 flint - gravel, 3	 string - gravel, 1
 minecraft:quartz	 diamond - netherrack, 40	 diamond - soul_sand, 24	 iron - netherrack, 6	 iron - soul_sand, 6	 flint - netherrack, 6
-minecraft:emerald	 diamond - sand, 1
-mekanism:fluorite_gem	 diamond - sand, 5	 iron - sand, 5
-mana-and-artifice:vinteum_ore	 diamond - sand, 5	 iron - sand, 2	 flint - sand, 1
-ars_nouveau:mana_gem	 diamond - sand, 5	 iron - sand, 2	 flint - sand, 1
-mekanism:salt	 diamond - sand, 3	 iron - sand, 3	 flint - sand, 5	 string - dust, 1
 minecraft:prismarine_shard	 diamond - sand, 3
-minecraft:ghast_tear	 diamond - soul_sand, 2
-minecraft:nether_wart	 diamond - soul_sand, 20	 iron - soul_sand, 2	 flint - soul_sand, 4
-minecraft:glowstone	 diamond - soul_sand, 20	 iron - soul_sand, 3
-minecraft:gunpowder	 iron - dust, 2	 iron - soul_sand, 2	 flint - dust, 1	 string - dust, 2
-exnihilosequentia:seed_blue_coral	 iron - sand, 1
-exnihilosequentia:seed_red_coral	 iron - sand, 1
-exnihilosequentia:seed_purple_coral	 iron - sand, 1
-exnihilosequentia:seed_pink_coral	 iron - sand, 1
-exnihilosequentia:seed_yellow_coral	 iron - sand, 1
-minecraft:warped_fungus	 flint - soul_sand, 2
-minecraft:crimson_fungus	 flint - soul_sand, 2
-minecraft:warped_nylium	 flint - soul_sand, 1
+mekanism:salt	 iron - sand, 3	 flint - sand, 5
 minecraft:crimson_nylium	 flint - soul_sand, 1
-minecraft:cocoa_beans	 string - sand, 7
-exnihilosequentia:seed_sugarcane	 string - sand, 2
-exnihilosequentia:seed_cactus	 string - sand, 2
-exnihilosequentia:seed_pickle	 string - sand, 1
-exnihilosequentia:ancient_spores	 string - sand, 1
 exnihilosequentia:seed_kelp	 string - sand, 2
-minecraft:crimson_roots	 string - soul_sand, 1
-minecraft:warped_roots	 string - soul_sand, 1
-minecraft:nether_sprouts	 string - soul_sand, 1
-minecraft:twisting_vines	 string - soul_sand, 1
 minecraft:weeping_vines	 string - soul_sand, 1
 diamond - dirt	 7, 9, 0, 8
 diamond - dust	 7, 9, 0, 4
