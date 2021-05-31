@@ -1,5 +1,5 @@
 air_compressor_unlock	1	None	mechanic:2	glassblower:2		pneumaticcraft:compressed_iron_block:1	
-andesite_alloy_unlock	1	None				create:zinc_ingot:16	
+andesite_alloy_unlock	1	None				exnihilosequentia:ingot_zinc:16	
 arcane_stone_unlock	1	ars_novice_spellbook				ars_nouveau:mana_gem:32	
 novice_spellbook_unlock	1	None				ars_nouveau:magic_clay:8	
 blank_plate_unlock	1	None				minecraft:sticky_piston:16	
@@ -9,11 +9,11 @@ botany_pot_unlock	1	None	florist:5	farmer:5	lumberjack:5	minecraft:beacon:1
 coke_brick_unlock	1	None	concretemixer:1			quark:charcoal_block:8	
 computer_unlock	1	None	mechanic:2	school:2		colony4cc:colony_peripheral:1	
 ender_chest_unlock	1	None	warehouse:3	enchanter:3		minecraft:ender_chest:4	
-iron_farm_unlock	1	None	enchanter:2	mine:3	blacksmith:3	minecraft:iron_block:8	
+iron_farm_unlock	1	None	enchanter:2	miner:3		minecraft:iron_block:8	
 jetpack_unlock	1	None	blacksmith:1	glassblower:1	smeltery:1	minecraft:tnt:16	
 linking_tool_unlock	1	None	enchanter:1	stonemason:2		quark:pipe:64	
 mob_grinder_unlock	1	None	guardtower:3	blacksmith:2		minecraft:netherite_sword:1	
-ore_crushing_hammer_unlock	1	None	crusher:2			prefab:block_double_compressed_stone:2	
+ore_crushing_hammer_unlock	1	None	crusher:1			prefab:block_double_compressed_stone:2	
 rs_controller_unlock	1	None	warehouse:4	mechanic:4	townhall:4	storage4computercraft:rs_peripheral:1	
 seared_melter_unlock	1	None	smeltery:3			tconstruct:seared_bricks:8	
 steel_casing_unlock	1	None	mechanic:3	blacksmith:3	smeltery:3	mekanism:enriched_iron:16	
@@ -32,18 +32,18 @@ ped_chopper_unlock	2	linking_tool	enchanter:2	lumberjack:4		minecraft:gold_block
 ped_harvester_unlock	2	linking_tool	enchanter:2	farmer:4		minecraft:gold_block:4	
 ped_planter_unlock	2	linking_tool	enchanter:2	farmer:3	lumberjack:3	minecraft:gold_block:4	
 ped_saw_unlock	2	linking_tool	enchanter:2	sawmill:3		minecraft:gold_block:4	
-ped_shear_unlock	2	linking_tool	enchanter:2	shepard:4		minecraft:gold_block:4	
+ped_shear_unlock	2	linking_tool	enchanter:2	shepherd:4		minecraft:gold_block:4	
 brass_case_unlock	3	andesite_case				create:brass_hand:8	
 elite_cc_unlock	3	advanced_cc	mechanic:4	library:3		mekanism:elite_energy_cube:1	
-mana_weaving_altar_unlock	3	vintium	mysticalsite:4	deliveryman:4		mana-and-artifice:purified_vinteum_dust:48	
-ped_crush_unlock	3	linking_tool	enchanter:2	crusher:5		minecraft:gold_block:4	
-vil_farmer_unlock	3	iron_farm	enchanter:2	farm:3	florist:3	minecraft:iron_block:8	
+mana_weaving_altar_unlock	3	vintium	mysticalsite:3	deliveryman:4		mana-and-artifice:purified_vinteum_dust:48	
+ped_crush_unlock	3	linking_tool	enchanter:2	crusher:4		minecraft:gold_block:4	
+vil_farmer_unlock	3	iron_farm	enchanter:2	farmer:2		minecraft:iron_block:8	
 ars_turret_unlock	4	arcane_stone	enchanter:4			ars_nouveau:wand:1	ars_nouveau:glyph_blink:4	
 cloche_unlock	4	blast_brick	mechanic:4	farmer:5	florist:4	immersiveengineering:circuit_board:32	
-create_harvester_unlock	4	brass_case	farmer:3	lumberjack:3		create:rotation_speed_controller:4	
+create_harvester_unlock	4	brass_case	farmer:3			create:rotation_speed_controller:4	
 ender_pouch_unlock	4	ender_chest	warehouse:4			enderstorage:ender_chest:2	
 programmer_unlock	4	assembly_controller	mechanic:3	school:2		pneumaticcraft:advanced_pressure_tube:8	
-saw_blade_unlock	4	blast_brick	mechanic:4	sawmill:4		chiselsandbits:bitsaw_diamond:2	
+saw_blade_unlock	4	blast_brick	mechanic:4	sawmill:3		chiselsandbits:bitsaw_diamond:2	
 turtle_unlock	4	computer	mechanic:5	library:4		colony4cc:colony_wireless_advanced:1	
 ultimate_cc_unlock	4	elite_cc	mechanic:5			mekanism:ultimate_energy_cube:1	
 arial_interface_unlock	5	programmer	mechanic:5	townhall:5		pneumaticcraft:plastic:64	
