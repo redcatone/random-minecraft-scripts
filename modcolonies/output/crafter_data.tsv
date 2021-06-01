@@ -1,10 +1,14 @@
 blacksmith:3	brass_case_unlock	create:brass_casing:4							create:brass_sheet:8	minecraft:oak_log:4
 blacksmith:1	copper_case_unlock	create:copper_casing:4							create:copper_sheet:8	minecraft:oak_log:4
+blacksmith:5	cr_ability	tconstruct:creative_ability:1							tconstruct:pig_iron_block:4	minecraft:nether_star:8
+blacksmith:5	cr_chemtank	mekanism:creative_chemical_tank:1							ars_nouveau:arcane_relay:16	mekanism:ultimate_chemical_tank:16
+blacksmith:5	cr_fluidtank	mekanism:creative_fluid_tank:1							refinedstorage:4096k_fluid_storage_part:16	bloodmagic:masterbloodorb:1
+blacksmith:5	cr_upgrade	tconstruct:creative_upgrade:1							tconstruct:slimesteel_block:4	minecraft:nether_star:8
 blacksmith:4	entity_spawner_unlock	mob_grinding_utils:entity_spawner:1							mob_grinding_utils:solid_xp_block:2	apotheosis:farmers_leash:1	minecraft:piston:1
 blacksmith:3	iron_farm_unlock	easy_villagers:iron_farm:1							minecraft:iron_block:1	minecraft:lava_bucket:1	minecraft:glass:1
 blacksmith:2	mob_grinder_unlock	mob_grinding_utils:saw:1							minecraft:redstone_block:1	minecraft:diamond_sword:2	mob_grinding_utils:spikes:2
 blacksmith:2	ore_crushing_hammer_unlock	engineerstools:crushing_hammer:1							minecraft:iron_block:1	excompressum:compressed_hammer_stone:1
-blacksmith:1	seared_melter_unlock	tconstruct:melter:1							tconstruct:seared_tank:1	tconstruct:seared_brick:5
+blacksmith:1	seared_melter_unlock	tconstruct:seared_melter:1							tconstruct:seared_tank:1	tconstruct:seared_brick:5
 blacksmith:3	steel_casing_unlock	mekanism:steel_casing:1							mekanism:ingot_osmium:1	immersiveengineering:plate_steel:8
 crusher:2	blast_brick_unlock	immersiveengineering:blastbrick:27							minecraft:magma_block:9	minecraft:nether_bricks:27
 crusher:2	coke_brick_unlock	immersiveengineering:cokebrick:27							minecraft:sandstone:9	minecraft:clay:27
@@ -21,9 +25,13 @@ crusher:1	gildedhammer	excompressum:compressed_sand:1							excompressum:compres
 crusher:1	None	exnihilosequentia:dust:1							minecraft:sand:2
 crusher:1	gildedhammer	exnihilosequentia:dust:1							minecraft:sand:1
 crusher:2	vintium_unlock	mana-and-artifice:vinteum_dust:8							mana-and-artifice:vinteum_ore:8
+enchanter:5	angel_ring	angelring:itemring:1							angelring:itemdiamondring:1	ironjetpacks:emerald_jetpack:1	mekanism:module_jetpack_unit:1
 enchanter:2	novice_spellbook_unlock	ars_nouveau:novice_spell_book:1							minecraft:book:1	ars_nouveau:magic_clay:1
 enchanter:4	ars_turret_unlock	ars_nouveau:spell_turret:1							ars_nouveau:arcane_relay_splitter:1	ars_nouveau:wand:1
 enchanter:3	cooking_for_blockheads_unlock	cookingforblockheads:crafting_book:1							tconstruct:crafting_station:1	minecraft:diamond:2	cookingforblockheads:recipe_book:1
+enchanter:5	cr_manajar	ars_nouveau:creative_mana_jar:1							ars_nouveau:potion_flask_extend_time:1	ars_nouveau:potion_flask_amplify:1	ars_nouveau:glyph_intangible:8
+enchanter:5	cr_spellbook	ars_nouveau:creative_spell_book:1							ars_nouveau:archmage_spell_book:1	ars_nouveau:spell_turret:8	refinedstorage:64k_storage_part:16
+enchanter:5	cr_vending	storagedrawers:creative_vending_upgrade:1							mekanism:antiprotonic_nucleosynthesizer:1	refinedstorage:range_upgrade:8	bloodmagic:bettercapacityrune:8	immersivepetroleum:petcoke_block:32
 enchanter:3	ender_chest_unlock	enderstorage:ender_chest:1							minecraft:ender_chest:1	minecraft:blaze_rod:4
 enchanter:4	ender_pouch_unlock	enderstorage:ender_pouch:1							enderstorage:ender_chest:1	mana-and-artifice:stone_rune_bag:4
 enchanter:3	ender_chest_unlock	enderstorage:ender_tank:1							mob_grinding_utils:tank_sink:1	minecraft:blaze_rod:4
@@ -53,6 +61,9 @@ mechanic:3	charging_station_unlock	pneumaticcraft:charging_station:1							pneum
 mechanic:3	cloche_unlock	immersiveengineering:cloche:1							minecraft:glass:4	immersiveengineering:treated_wood_horizontal:2	immersiveengineering:component_iron:1	immersiveengineering:electron_tube:1
 mechanic:2	computer_unlock	computercraft:computer_normal:1							minecraft:glass_pane:1	minecraft:redstone_block:1	minecraft:stone:7
 mechanic:3	create_harvester_unlock	create:mechanical_harvester:1							create:andesite_alloy:2	create:andesite_casing:1	minecraft:iron_bars:4
+mechanic:5	cr_compressor	pneumaticcraft:creative_compressor:1							pneumaticcraft:jet_boots_upgrade_5:4	pneumaticcraft:aerial_interface:8	pneumaticcraft:huge_tank:8
+mechanic:5	cr_energy	mekanism:creative_energy_cube:1							mekanism:ultimate_induction_provider:4	mekanism:ultimate_induction_cell:4	pneumaticcraft:pneumatic_dynamo:32
+mechanic:5	cr_motor	create:creative_motor:1							create:rotation_speed_controller:16	create:flywheel:8	mekanismgenerators:turbine_valve:8
 mechanic:4	elite_cc_unlock	mekanism:elite_control_circuit:1							mekanism:advanced_control_circuit:1	mekanism:alloy_reinforced:2
 mechanic:3	programmer_unlock	pneumaticcraft:programmer:1							pneumaticcraft:turbine_rotor:2	pneumaticcraft:printed_circuit_board:1	pneumaticcraft:plastic:2
 mechanic:4	rs_controller_unlock	refinedstorage:controller:1							refinedstorage:machine_casing:1	refinedstorage:advanced_processor:1	refinedstorage:quartz_enriched_iron_block:1
