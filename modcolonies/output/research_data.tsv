@@ -49,3 +49,15 @@ ultimate_cc_unlock	4	elite_cc	mechanic:5			mekanism:ultimate_energy_cube:1
 arial_interface_unlock	5	programmer	mechanic:5	townhall:5		pneumaticcraft:plastic:64	
 rs_range_upgrade_unlock	5	rs_controller	library:5	mysticalsite:1		quark:dragon_scale:1	
 wireless_grid_unlock	5	rs_controller	warehouse:5	deliveryman:5	mysticalsite:1	colony4cc:colony_wireless_normal:4	
+warning	1	None				minecraft:nether_star:1	
+angel_ring	2	warning				mob_grinding_utils:gm_chicken_feed_cursed:16	minecraft:elytra:1	
+cr_ability	3	angel_ring				tconstruct:manyullyn_block:64	tconstruct:hepatizon_block:64	
+cr_chemtank	3	angel_ring				mekanism:crystal_uranium:64	mekanism:pellet_plutonium:8	
+cr_motor	3	angel_ring				create:shadow_steel_casing:16	create:refined_radiance_casing:16	
+cr_upgrade	3	angel_ring				tconstruct:manyullyn_block:64	tconstruct:queens_slime_block:64	
+cr_compressor	4	cr_motor				pneumaticcraft:electrostatic_compressor:16	pneumaticcraft:flux_compressor:16	
+cr_fluidtank	4	cr_chemtank				mekanism:ultimate_fluid_tank:16	pneumaticcraft:huge_tank:8	
+cr_manajar	4	angel_ring				ars_nouveau:summoning_crystal:16	ars_nouveau:mana_bloom_crop:32	
+cr_spellbook	4	cr_manajar				ars_nouveau:spell_turret:16	ars_nouveau:creative_mana_jar:16	
+cr_vending	4	cr_fluidtank				minecolonies:scroll_highlight:16	minecolonies:golden_bread:64	minecraft:enchanted_golden_apple:64	darkutils:rune_damage_player:33	
+cr_energy	5	cr_compressor				mekanism:sps_casing:16	mekanism:module_solar_recharging_unit:8	
