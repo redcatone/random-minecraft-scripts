@@ -8,7 +8,7 @@ blacksmith:4	entity_spawner_unlock	mob_grinding_utils:entity_spawner:1							mob
 blacksmith:3	iron_farm_unlock	easy_villagers:iron_farm:1							minecraft:iron_block:1	minecraft:lava_bucket:1	minecraft:glass:1
 blacksmith:2	mob_grinder_unlock	mob_grinding_utils:saw:1							minecraft:redstone_block:1	minecraft:diamond_sword:2	mob_grinding_utils:spikes:2
 blacksmith:2	ore_crushing_hammer_unlock	engineerstools:crushing_hammer:1							minecraft:iron_block:1	excompressum:compressed_hammer_stone:1
-blacksmith:1	seared_melter_unlock	tconstruct:seared_melter:1							tconstruct:seared_tank:1	tconstruct:seared_brick:5
+blacksmith:1	seared_melter_unlock	tconstruct:seared_melter:1							tconstruct:seared_fuel_tank:1	tconstruct:seared_brick:5
 blacksmith:3	steel_casing_unlock	mekanism:steel_casing:1							mekanism:ingot_osmium:1	immersiveengineering:plate_steel:8
 crusher:2	blast_brick_unlock	immersiveengineering:blastbrick:27							minecraft:magma_block:9	minecraft:nether_bricks:27
 crusher:2	coke_brick_unlock	immersiveengineering:cokebrick:27							minecraft:sandstone:9	minecraft:clay:27
