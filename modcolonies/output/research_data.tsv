@@ -1,30 +1,30 @@
 air_compressor	1	None	mechanic:2	glassblower:2		pneumaticcraft:compressed_iron_block:1	
-andesite_alloy	1	None				exnihilosequentia:ingot_zinc:16	
-arcane_stone	1	ars_novice_spellbook				ars_nouveau:mana_gem:32	
-ars_novice_spellbook	1	None				ars_nouveau:magic_clay:8	
-blank_plate	1	None				minecraft:sticky_piston:16	
+andesite_alloy	1	None	mechanic:2!	stonemason:2!		exnihilosequentia:ingot_zinc:16	
+arcane_stone	1	ars_novice_spellbook	enchanter:2!	stonemason:2!		ars_nouveau:mana_gem:32	
+ars_novice_spellbook	1	None	enchanter:2!			ars_nouveau:magic_clay:8	
+blank_plate	1	None	stonemason:3!	enchanter:2!		minecraft:sticky_piston:16	
 blockhead_market	1	None	farmer:1	lumberjack:1	florist:1	prefab:item_villager_houses:1	
-blood_altar	1	None				tconstruct:blood_bucket:8	
+blood_altar	1	None	graveyard:3!	mysticalsite:2!		tconstruct:blood_bucket:8	
 botany_pot	1	None	florist:5	farmer:5	lumberjack:5	minecraft:beacon:1	
-coke_brick	1	None	concretemixer:1			quark:charcoal_block:8	
+coke_brick	1	None	concretemixer:1	smeltery:3!		quark:charcoal_block:8	
 computer	1	None	mechanic:2	school:2		colony4cc:colony_peripheral:1	
 ender_chest	1	None	warehouse:3	enchanter:3		minecraft:ender_chest:4	
 iron_farm	1	None	enchanter:2	miner:3		minecraft:iron_block:8	
 jetpack	1	None	blacksmith:1	glassblower:1	smeltery:1	minecraft:tnt:16	
 linking_tool	1	None	enchanter:1	stonemason:2		quark:pipe:64	
 mob_grinder	1	None	guardtower:3	blacksmith:2		minecraft:netherite_sword:1	
-ore_crushing_hammer	1	None	crusher:1			prefab:block_double_compressed_stone:2	
+ore_crushing_hammer	1	None	crusher:1	miner:2!		prefab:block_double_compressed_stone:2	
 rs_controller	1	None	warehouse:4	mechanic:4	townhall:4	storage4computercraft:rs_peripheral:1	
 seared_melter	1	None	smeltery:3			tconstruct:seared_bricks:8	
 steel_casing	1	None	mechanic:3	blacksmith:3	smeltery:3	mekanism:enriched_iron:16	
-vintium	1	None				mana-and-artifice:vinteum_ore:16	
+vintium	1	None	mysticalsite:1!	crusher:2!		mana-and-artifice:vinteum_ore:16	
 advanced_cc	2	steel_casing	mechanic:3	glassblower:3		mekanism:advanced_energy_cube:1	
-andesite_case	2	andesite_alloy				create:cuckoo_clock:16	
+andesite_case	2	andesite_alloy	mechanic:2!	smeltery:2!		create:cuckoo_clock:16	
 assembly_controller	2	air_compressor	mechanic:3	builder:4		pneumaticcraft:printed_circuit_board:4	
-blast_brick	2	coke_brick	concretemixer:2			immersiveengineering:coke:4	
+blast_brick	2	coke_brick	concretemixer:2	stonesmeltery:3!		immersiveengineering:coke:4	
 charging_station	2	air_compressor	mechanic:3	blacksmith:4		pneumaticcraft:printed_circuit_board:4	
 cooking_for_blockheads	2	blockhead_market	cook:3	library:3		pamhc2foodextended:delightedmealitem:1	
-copper_case	2	andesite_alloy				create:copper_valve_handle:4	
+copper_case	2	andesite_alloy	mechanic:2!	blacksmith:1!		create:copper_valve_handle:4	
 entity_spawner	2	mob_grinder	blacksmith:4	enchanter:3		pamhc2foodcore:baconandeggsitem:16	
 gm_chicken_feed	2	mob_grinder	chickenherder:4	enchanter:3		minecraft:rotten_flesh:32	
 ped_bee_hive	2	linking_tool	enchanter:2	beekeeper:3		minecraft:gold_block:4	
@@ -33,15 +33,15 @@ ped_harvester	2	linking_tool	enchanter:2	farmer:4		minecraft:gold_block:4
 ped_planter	2	linking_tool	enchanter:2	farmer:3	lumberjack:3	minecraft:gold_block:4	
 ped_saw	2	linking_tool	enchanter:2	sawmill:3		minecraft:gold_block:4	
 ped_shear	2	linking_tool	enchanter:2	shepherd:4		minecraft:gold_block:4	
-brass_case	3	andesite_case				create:brass_hand:8	
+brass_case	3	andesite_case	mechanic:3!	blacksmith:3!		create:brass_hand:8	
 elite_cc	3	advanced_cc	mechanic:4	library:3		mekanism:elite_energy_cube:1	
 mana_weaving_altar	3	vintium	mysticalsite:3	deliveryman:4		mana-and-artifice:purified_vinteum_dust:48	
 ped_crush	3	linking_tool	enchanter:2	crusher:4		minecraft:gold_block:4	
 vil_farmer	3	iron_farm	enchanter:2	farmer:2		minecraft:iron_block:8	
-ars_turret	4	arcane_stone	enchanter:4			ars_nouveau:wand:1	ars_nouveau:glyph_blink:4	
+ars_turret	4	arcane_stone	enchanter:4	mysticalsite:2!		ars_nouveau:wand:1	ars_nouveau:glyph_blink:4	
 cloche	4	blast_brick	mechanic:4	farmer:5	florist:4	immersiveengineering:circuit_board:32	
-create_harvester	4	brass_case	farmer:3			create:rotation_speed_controller:4	
-ender_pouch	4	ender_chest	warehouse:4			enderstorage:ender_chest:2	
+create_harvester	4	brass_case	mechanic:3!	farmer:3		create:rotation_speed_controller:4	
+ender_pouch	4	ender_chest	warehouse:4	dyer:1!		enderstorage:ender_chest:2	
 programmer	4	assembly_controller	mechanic:3	school:2		pneumaticcraft:advanced_pressure_tube:8	
 saw_blade	4	blast_brick	mechanic:4	sawmill:3		chiselsandbits:bitsaw_diamond:2	
 turtle	4	computer	mechanic:5	library:4		colony4cc:colony_wireless_advanced:1	
@@ -50,14 +50,14 @@ arial_interface	5	programmer	mechanic:5	townhall:5		pneumaticcraft:plastic:64
 rs_range_upgrade	5	rs_controller	library:5	mysticalsite:1		quark:dragon_scale:1	
 wireless_grid	5	rs_controller	warehouse:5	deliveryman:5	mysticalsite:1	colony4cc:colony_wireless_normal:4	
 warning	1	None				minecraft:nether_star:1	
-angel_ring	2	warning				mob_grinding_utils:gm_chicken_feed_cursed:16	minecraft:elytra:1	
-cr_ability	3	angel_ring				tconstruct:manyullyn_block:64	tconstruct:hepatizon_block:64	
-cr_chemtank	3	angel_ring				mekanism:crystal_uranium:64	mekanism:pellet_plutonium:8	
-cr_motor	3	angel_ring				create:shadow_steel_casing:16	create:refined_radiance_casing:16	
-cr_upgrade	3	angel_ring				tconstruct:manyullyn_block:64	tconstruct:queens_slime_block:64	
-cr_compressor	4	cr_motor				pneumaticcraft:electrostatic_compressor:16	pneumaticcraft:flux_compressor:16	
-cr_fluidtank	4	cr_chemtank				mekanism:ultimate_fluid_tank:16	pneumaticcraft:huge_tank:8	
-cr_manajar	4	angel_ring				ars_nouveau:summoning_crystal:16	ars_nouveau:mana_bloom_crop:32	
-cr_spellbook	4	cr_manajar				ars_nouveau:spell_turret:16	ars_nouveau:creative_mana_jar:16	
-cr_vending	4	cr_fluidtank				minecolonies:scroll_highlight:16	minecolonies:golden_bread:64	minecraft:enchanted_golden_apple:64	darkutils:rune_damage_player:33	
-cr_energy	5	cr_compressor				mekanism:sps_casing:16	mekanism:module_solar_recharging_unit:8	
+angel_ring	2	warning	builder:10!	chickenherder:15!		mob_grinding_utils:gm_chicken_feed_cursed:16	minecraft:elytra:1	
+cr_ability	3	angel_ring	smeltery:10!			tconstruct:manyullyn_block:64	tconstruct:hepatizon_block:64	
+cr_chemtank	3	angel_ring	blacksmith:10!			mekanism:crystal_uranium:64	mekanism:pellet_plutonium:8	
+cr_motor	3	angel_ring	mechanic:10!			create:shadow_steel_casing:16	create:refined_radiance_casing:16	
+cr_upgrade	3	angel_ring	stonesmeltery:10!			tconstruct:manyullyn_block:64	tconstruct:queens_slime_block:64	
+cr_compressor	4	cr_motor	glassblower:10!			pneumaticcraft:electrostatic_compressor:16	pneumaticcraft:flux_compressor:16	
+cr_fluidtank	4	cr_chemtank	sifter:10!	glassblower:10!		mekanism:ultimate_fluid_tank:16	pneumaticcraft:huge_tank:8	
+cr_manajar	4	angel_ring	mysticalsite:20!			ars_nouveau:summoning_crystal:16	ars_nouveau:mana_bloom_crop:32	
+cr_spellbook	4	cr_manajar	enchanter:10!			ars_nouveau:spell_turret:16	ars_nouveau:creative_mana_jar:16	
+cr_vending	4	cr_fluidtank	builder:20!	mysticalsite:40!		minecolonies:scroll_highlight:16	minecolonies:golden_bread:64	minecraft:enchanted_golden_apple:64	darkutils:rune_damage_player:33	
+cr_energy	5	cr_compressor	builder:20!			mekanism:sps_casing:16	mekanism:module_solar_recharging_unit:8	
