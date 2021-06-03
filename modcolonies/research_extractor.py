@@ -48,6 +48,8 @@ class ResearchData:
             for req in data['requirements']:
                 if 'mandatory-building' in req:
                     self.all_research_data[unlock]['requirements'].append(f"{req['mandatory-building']}:{req['level']}")
+                if 'building' in req:
+                    self.all_research_data[unlock]['requirements'].append(f"{req['building']}:{req['level']}!")
                 if 'item' in req:
                     while len(self.all_research_data[unlock]['requirements']) < 3:
                         self.all_research_data[unlock]['requirements'].append('')
