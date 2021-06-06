@@ -28,7 +28,7 @@ crusher:1	None	exnihilosequentia:dust:1							minecraft:sand:2
 crusher:1	gildedhammer	exnihilosequentia:dust:1							minecraft:sand:1
 crusher:2	vintium	mana-and-artifice:vinteum_dust:8							mana-and-artifice:vinteum_ore:8
 enchanter:5	angel_ring	angelring:itemring:1							angelring:itemdiamondring:1	ironjetpacks:emerald_jetpack:1	mekanism:module_jetpack_unit:1
-enchanter:2	novice_spellbook	ars_nouveau:novice_spell_book:1							minecraft:book:1	ars_nouveau:magic_clay:1
+enchanter:2	ars_novice_spellbook	ars_nouveau:novice_spell_book:1							minecraft:book:1	ars_nouveau:magic_clay:1
 enchanter:4	ars_turret	ars_nouveau:spell_turret:1							ars_nouveau:arcane_relay_splitter:1	ars_nouveau:wand:1
 enchanter:3	cooking_for_blockheads	cookingforblockheads:crafting_book:1							tconstruct:crafting_station:1	minecraft:diamond:2	cookingforblockheads:recipe_book:1
 enchanter:5	cr_manajar	ars_nouveau:creative_mana_jar:1							ars_nouveau:potion_flask_extend_time:1	ars_nouveau:potion_flask_amplify:1	ars_nouveau:glyph_intangible:8
