@@ -117,7 +117,7 @@ class CraftData:
 
                     help_data.append(f'"Crafts {output_amount}"')
                     help_data.append(f'"Requires:"')
-                    help_data.append(f'"  Level {level} {crafter}"')
+                    help_data.append(f'"  Level {level} {crafter.capitalize()}"')
 
                     # Write row
                     help_data += input_data
