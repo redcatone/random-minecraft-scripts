@@ -1,5 +1,7 @@
 import mods.exnihilosequentia.ZenSieveRecipe;
 
+<item:exnihilosequentia:sieve>.addTooltip(("Item is disabled! Drop rates are for the Minecolonies Sifter hut." as MCTextComponent).setStyle(new MCStyle().setColor(<formatting:red>)));
+
 <recipetype:exnihilosequentia:sieve>.removeAll();
 
 <recipetype:exnihilosequentia:sieve>.create("diamond_minecraft.dirt_minecraft.wheat_seeds").setInput(<item:minecraft:dirt>).addDrop(<item:minecraft:wheat_seeds>).addRoll("diamond", 0.0847);

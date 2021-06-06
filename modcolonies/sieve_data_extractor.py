@@ -66,7 +66,9 @@ class SieveData:
 
 
         with open(f'{self.script_dir}\output\jei_sieve.zs', 'w') as jei_file:
-            jei_file.write('import mods.exnihilosequentia.ZenSieveRecipe;' + '\n\n' + '<recipetype:exnihilosequentia:sieve>.removeAll();' + '\n\n')
+            jei_file.write('import mods.exnihilosequentia.ZenSieveRecipe;' + '\n\n')
+            jei_file.write('<item:exnihilosequentia:sieve>.addTooltip(("Item is disabled! Drop rates are for the Minecolonies Sifter hut." as MCTextComponent).setStyle(new MCStyle().setColor(<formatting:red>)));' + '\n\n')
+            jei_file.write('<recipetype:exnihilosequentia:sieve>.removeAll();' + '\n\n')
 
             for drop in self.drop_data:
                 if drop == 'minecraft:empty': continue  # skip empty drop
