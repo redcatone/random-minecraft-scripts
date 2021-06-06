@@ -65,7 +65,7 @@ class SieveData:
                 mesh_total[f'{tier}_{block}'] += int(weight)
 
 
-        with open(f'{self.script_dir}\output\jei_sieve.zs', 'w') as jei_file:
+        with open(f'{self.script_dir}\output\jei_colony_sifting.zs', 'w') as jei_file:
             # jei imports
             jei_file.write('import mods.exnihilosequentia.ZenSieveRecipe;' + '\n')
             jei_file.write('import crafttweaker.api.util.text.MCTextComponent;' + '\n')
