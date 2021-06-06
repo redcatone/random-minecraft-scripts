@@ -66,9 +66,28 @@ class SieveData:
 
 
         with open(f'{self.script_dir}\output\jei_sieve.zs', 'w') as jei_file:
-            jei_file.write('import mods.exnihilosequentia.ZenSieveRecipe;' + '\n\n')
+            # jei imports
+            jei_file.write('import mods.exnihilosequentia.ZenSieveRecipe;' + '\n')
+            jei_file.write('import crafttweaker.api.util.text.MCTextComponent;' + '\n')
+            jei_file.write('import crafttweaker.api.util.text.MCStyle;' + '\n')
+
+            jei_file.write('\n\n')
+
+            # jei tooltip
             jei_file.write('<item:exnihilosequentia:sieve>.addTooltip(("Item is disabled! Drop rates are for the Minecolonies Sifter hut." as MCTextComponent).setStyle(new MCStyle().setColor(<formatting:red>)));' + '\n\n')
+
+            # remove default recipes
             jei_file.write('<recipetype:exnihilosequentia:sieve>.removeAll();' + '\n\n')
+
+            compressed = {
+                'dirt': 'prefab:block_compressed_dirt',
+                'dust': 'excompressum:compressed_dust',
+                'netherrack': 'excompressum:compressed_nether_gravel',
+                'gravel': 'excompressum:compressed_gravel',
+                'soul_sand': 'excompressum:compressed_soul_sand',
+                'endstone': 'excompressum:compressed_ender_gravel',
+                'sand': 'excompressum:compressed_sand'
+            }
 
             for drop in self.drop_data:
                 if drop == 'minecraft:empty': continue  # skip empty drop
@@ -77,10 +96,8 @@ class SieveData:
                     block = re.match('.* - (.*), ', tier_block)[1]
                     weight = int(re.match('.*, (\d*)', tier_block)[1])
                     rate = round(weight / mesh_total[f'{tier}_{block}'], 4)
-                    if block == 'dust':
-                        block = 'exnihilosequentia:dust'
-                    else:
-                        block = f'minecraft:{block}'
+                    block = compressed[block]
 
-                    row = f'<recipetype:exnihilosequentia:sieve>.create("{tier}_{block.replace(":", ".")}_{drop.replace(":", ".")}").setInput(<item:{block}>).addDrop(<item:{drop}>).addRoll("{tier}", {rate});'
+                    addRolls = "".join([f'.addRoll("{tier}", {rate})'] * 8)
+                    row = f'<recipetype:exnihilosequentia:sieve>.create("{tier}_{block.replace(":", ".")}_{drop.replace(":", ".")}").setInput(<item:{block}>).addDrop(<item:{drop}>){addRolls};'
                     jei_file.write(row + '\n')
