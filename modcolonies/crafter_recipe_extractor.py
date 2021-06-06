@@ -96,7 +96,7 @@ class CraftData:
         #  3 Sand
         #  29 Dirt
 
-        with open(f'{self.script_dir}\output\jei_colony_crafting', 'w') as zs_file:
+        with open(f'{self.script_dir}\output\jei_colony_crafting.zs', 'w') as zs_file:
             for recipe_data in self.worker_recipes.values():
                 # Basic Info
                 crafter  = recipe_data['worker']
