@@ -51,3 +51,34 @@ class SieveData:
             for mesh_tier_block in self.mesh_data:
                 row = mesh_tier_block + '\t ' + str(self.mesh_data[mesh_tier_block])
                 tsv_file.write(row + '\n')
+
+
+    def generate_nihilo(self):
+        mesh_total = collections.defaultdict(int)
+
+        for drop in self.drop_data:
+            for tier_block in self.drop_data[drop]:
+                tier = re.match('(.*) -', tier_block)[1]
+                block = re.match('.* - (.*), ', tier_block)[1]
+                weight = int(re.match('.*, (\d*)', tier_block)[1])
+
+                mesh_total[f'{tier}_{block}'] += int(weight)
+
+
+        with open(f'{self.script_dir}\output\jei_sieve.zs', 'w') as jei_file:
+            jei_file.write('import mods.exnihilosequentia.ZenSieveRecipe;' + '\n\n' + '<recipetype:exnihilosequentia:sieve>.removeAll();' + '\n\n')
+
+            for drop in self.drop_data:
+                if drop == 'minecraft:empty': continue  # skip empty drop
+                for tier_block in self.drop_data[drop]:
+                    tier = re.match('(.*) -', tier_block)[1]
+                    block = re.match('.* - (.*), ', tier_block)[1]
+                    weight = int(re.match('.*, (\d*)', tier_block)[1])
+                    rate = round(weight / mesh_total[f'{tier}_{block}'], 4)
+                    if block == 'dust':
+                        block = 'exnihilosequentia:dust'
+                    else:
+                        block = f'minecraft:{block}'
+
+                    row = f'<recipetype:exnihilosequentia:sieve>.create("{tier}_{block.replace(":", ".")}_{drop.replace(":", ".")}").setInput(<item:{block}>).addDrop(<item:{drop}>).addRoll("{tier}", {rate});'
+                    jei_file.write(row + '\n')
