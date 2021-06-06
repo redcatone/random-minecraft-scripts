@@ -11,25 +11,38 @@ class SieveData:
         self.script_dir = os.path.dirname(__file__)
 
 
-    def import_loottable(self, sieve_folderpath: str):
+    def import_loottable(self, is_compressed: bool, sieve_folderpath: str):
         self.mesh_tiers = os.listdir(sieve_folderpath)
 
         # for mesh_tier in self.mesh_tiers:
         for mesh_tier in ['diamond', 'iron', 'flint', 'string']:  # custom ordering
+            if os.path.isfile(f'{sieve_folderpath}\{mesh_tier}'): continue # skip files
             file_list = os.listdir(f'{sieve_folderpath}\{mesh_tier}')
             for block_file in file_list:
                 with open(f'{sieve_folderpath}\{mesh_tier}\{block_file}', 'r') as block_data:
                     block = re.sub(r'.json', '', block_file)
                     drop_data = json.loads(block_data.read())['pools'][0]
-                    roll_min = drop_data['rolls']['min']
-                    roll_max = drop_data['rolls']['max']
+                    try:
+                        roll_min = drop_data['rolls']['min']
+                        roll_max = drop_data['rolls']['max']
+                    except TypeError:
+                        roll_min = drop_data['rolls']
+                        roll_max = drop_data['rolls']
 
                     bonus_roll_min = 0
                     bonus_roll_max = 0
                     if 'bonus_rolls' in drop_data:
-                        bonus_roll_max = drop_data['bonus_rolls']['max']
-                        bonus_roll_min = drop_data['bonus_rolls']['min']
-                    self.mesh_data[f'{mesh_tier} - {block}'] = f'{roll_min}, {roll_max}, {bonus_roll_min}, {bonus_roll_max}'
+                        try:
+                            bonus_roll_min = drop_data['bonus_rolls']['max']
+                            bonus_roll_max = drop_data['bonus_rolls']['min']
+                        except TypeError:
+                            bonus_roll_min = drop_data['bonus_rolls']
+                            bonus_roll_max = drop_data['bonus_rolls']
+
+                    if is_compressed: comp = 'compressed:'
+                    else: comp = ''
+
+                    self.mesh_data[f'{mesh_tier} - {comp}{block}'] = f'{roll_min}, {roll_max}, {bonus_roll_min}, {bonus_roll_max}'
 
                     for drop in drop_data['entries']:
                         try:
@@ -39,7 +52,7 @@ class SieveData:
 
                         rate = drop['weight']
 
-                        self.drop_data[name].append(f'{mesh_tier} - {block}, {rate}')
+                        self.drop_data[name].append(f'{mesh_tier} - {comp}{block}, {rate}')
 
 
     def write_to_TSV(self):
@@ -59,10 +72,10 @@ class SieveData:
         for drop in self.drop_data:
             for tier_block in self.drop_data[drop]:
                 tier = re.match('(.*) -', tier_block)[1]
-                block = re.match('.* - (.*), ', tier_block)[1]
+                full_block = re.match('.* - (.*), ', tier_block)[1]
                 weight = int(re.match('.*, (\d*)', tier_block)[1])
 
-                mesh_total[f'{tier}_{block}'] += int(weight)
+                mesh_total[f'{tier}_{full_block}'] += int(weight)
 
 
         with open(f'{self.script_dir}\output\jei_colony_sifting.zs', 'w') as jei_file:
@@ -93,10 +106,16 @@ class SieveData:
                 if drop == 'minecraft:empty': continue  # skip empty drop
                 for tier_block in self.drop_data[drop]:
                     tier = re.match('(.*) -', tier_block)[1]
-                    block = re.match('.* - (.*), ', tier_block)[1]
+                    full_block = re.match('.* - (.*), ', tier_block)[1]
                     weight = int(re.match('.*, (\d*)', tier_block)[1])
-                    rate = round(weight / mesh_total[f'{tier}_{block}'], 4)
-                    block = compressed[block]
+                    rate = round(weight / mesh_total[f'{tier}_{full_block}'], 4)
+                    is_compressed = re.search(':', tier_block)
+                    if is_compressed:
+                        block = re.match('.*:(.*)', full_block)[1]
+                        block = compressed[block]
+                    else:
+                        if block == 'dust': block = 'exnihilosequentia:dust'
+                        else: block = f'minecraft:{block}'
 
                     addRolls = "".join([f'.addRoll("{tier}", {rate})'] * 8)
                     row = f'<recipetype:exnihilosequentia:sieve>.create("{tier}_{block.replace(":", ".")}_{drop.replace(":", ".")}").setInput(<item:{block}>).addDrop(<item:{drop}>){addRolls};'

@@ -44,8 +44,9 @@ class CraftData:
                     all_outputs = []
 
                     # Main Output
-                    main_output = recipe_data['result']
-                    main_output_count = str(recipe_data['count'])
+                    main_output = recipe_data.get('result', '')
+                    if not main_output: main_output = recipe_data['additional-output'][0]['item']
+                    main_output_count = str(recipe_data.get('count', 1))
                     all_outputs.append(f"{main_output}:{main_output_count}")
 
                     # Alternate Outputs
